@@ -5,6 +5,12 @@
  * @package Custom Theme
  */
 
+if (!defined('CUSTOM_THEME_DIR_PATH')) {
+    define('CUSTOM_THEME_DIR_PATH', untrailingslashit(get_template_directory()));
+}
+
+require_once CUSTOM_THEME_DIR_PATH . '/inc/helpers/autoloader.php';
+
 /**
  * Enqueue scripts(stylesheet and JS) on the head
  *
