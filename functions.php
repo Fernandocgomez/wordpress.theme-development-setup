@@ -11,6 +11,13 @@ if (!defined('CUSTOM_THEME_DIR_PATH')) {
 
 require_once CUSTOM_THEME_DIR_PATH . '/inc/helpers/autoloader.php';
 
+
+function custom_theme_get_theme_instance() {
+    \CUSTOM_THEME\Inc\CUSTOM_THEME::get_instance();
+}
+
+custom_theme_get_theme_instance();
+
 /**
  * Enqueue scripts(stylesheet and JS) on the head
  *
