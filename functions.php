@@ -21,14 +21,3 @@ function custom_theme_get_theme_instance() {
 }
 
 custom_theme_get_theme_instance();
-
-/**
- * Enqueue scripts(stylesheet and JS) on the head
- *
- * @return void
- */
-function theme_enqueue_scripts() {
-
-}
-
-add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');

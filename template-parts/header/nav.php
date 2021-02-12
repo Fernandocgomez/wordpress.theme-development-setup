@@ -37,3 +37,10 @@
     </div>
   </div>
 </nav>
+
+<?php
+wp_nav_menu([
+  'theme_location' => 'theme-header-menu',
+  'container_class' => 'my_extra_class'
+]);
+?>
